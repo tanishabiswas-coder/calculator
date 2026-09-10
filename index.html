@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>Calculator</h1>
+        <div class="calculator">
+            <input type="text" id="display" class="display" readonly value="0">
+            
+            <div class="buttons">
+                <!-- Row 1: Actions -->
+                <button data-action="clear" class="btn btn-action">C</button>
+                <button data-action="delete" class="btn btn-action">DEL</button>
+                <button data-operator="/" class="btn btn-operator">÷</button>
+                <button data-operator="*" class="btn btn-operator">×</button>
+                
+                <!-- Row 2 -->
+                <button data-number="7" class="btn btn-number">7</button>
+                <button data-number="8" class="btn btn-number">8</button>
+                <button data-number="9" class="btn btn-number">9</button>
+                <button data-operator="-" class="btn btn-operator">−</button>
+                
+                <!-- Row 3 -->
+                <button data-number="4" class="btn btn-number">4</button>
+                <button data-number="5" class="btn btn-number">5</button>
+                <button data-number="6" class="btn btn-number">6</button>
+                <button data-operator="+" class="btn btn-operator">+</button>
+                
+                <!-- Row 4 -->
+                <button data-number="1" class="btn btn-number">1</button>
+                <button data-number="2" class="btn btn-number">2</button>
+                <button data-number="3" class="btn btn-number">3</button>
+                <button data-action="equals" class="btn btn-equals">=</button>
+                
+                <!-- Row 5 -->
+                <button data-number="0" class="btn btn-number btn-zero">0</button>
+                <button data-number="." class="btn btn-number">.</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
